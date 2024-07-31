@@ -55,4 +55,15 @@ Using append method we can add text directly to the information in the text file
 OUTPUT: sasi engg college
 ::NOTE::using write we can replace the information in the file
 
-
+5)
+    /** UNLINK **/
+        var http =require('http');
+        var fs = require('fs');
+        http.createServer((req,res)=>{
+            fs.unlink('test.txt',(err)=>{
+                if(err)throw err;
+                console.log("file delected");
+             })
+        }).listen(8081)
+::OUTPUT:: FILE DELETED(test.txt)
+::NOTE::using unlink method we can delete entire test.txt file
