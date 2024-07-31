@@ -1,13 +1,12 @@
 1)
-/** HTTP **/
+    /** HTTP **/
 
-var http=require('http');
-
-http.createServer((req,res)=>{
-    res.write(req.url);
-    res.end();
-    console.log('server running..')
-}).listen(8080)
+        var http=require('http');
+        http.createServer((req,res)=>{
+            res.write(req.url);
+            res.end();
+            console.log('server running..')
+        }).listen(8080)
 
 2)
     /** FILE SYSTEM **/
