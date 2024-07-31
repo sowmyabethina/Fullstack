@@ -3,10 +3,13 @@
 
         var http=require('http');
         http.createServer((req,res)=>{
-            res.write(req.url);
+            res.write(req.url);    //res.write('Helloworld'); 
             res.end();
             console.log('server running..')
         }).listen(8080)
+::OUTPUT format -> localhost:8080/products-->/products
+::NOTE::
+creating the server and display the information in the web page
 
 2)
     /** FILE SYSTEM **/
