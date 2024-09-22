@@ -69,4 +69,19 @@ OUTPUT: sasi engg college
         }).listen(8081)
 ::OUTPUT:: FILE DELETED(test.txt)
 ::NOTE::
-    Using unlink method we can delete entire test.txt file
+    Using unlink method we can delete entire test.txt file    
+
+6)
+    /** URL MODULE **/
+        var url = require('url');
+        var adrs = 'https://localhost:8080/home.html?year=2018&month=feb'
+        var q= url.parse(adrs,true);
+        console.log(q.pathname);
+        console.log(q.host);
+        console.log(q.search);
+
+::OUTPUT:: 
+          PS C:\sowmya> node url.js
+          /home.html
+          localhost:8080
+          ?year=2018&month=feb
